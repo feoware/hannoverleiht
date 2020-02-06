@@ -1,3 +1,35 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "./theme.scss";
+
+@import "https://fonts.googleapis.com/icon?family=Material+Icons";
+
+.height100 {
+    min-height: 100%;
+    height: 100%;
+}
+
+.width100 {
+    width: 100%;
+    min-width: 100%;
+}
+
+.lightblue {
+    background-color: lightblue !important;
+}
+
+.lightcream {
+    background-color: rgb(253, 253, 229);
+}
+
+.spacer {
+    flex: 1 1 0;
+}
+
+.marginright16 {
+    margin-right: 16px;
+}
+
+.marginbottom16 {
+    margin-bottom: 16px;
+}

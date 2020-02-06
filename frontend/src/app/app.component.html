@@ -1,11 +1,15 @@
-Hannoverleiht in the making
-
-<button mat-raised-button color="primary">
-    Primary
-</button>
-<button mat-raised-button color="accent">
-    Accent
-</button>
-<button mat-raised-button color="warn">
-    Warn
-</button>
+<mat-toolbar fxLayout=row fxLayoutGap="20px" color=accent>
+    <button mat-icon-button (click)=toggleSideNav()><mat-icon>menu</mat-icon></button>
+    <div>hannoverleiht (beta)</div>
+    <div class=spacer></div>
+    <mat-icon>question_answer</mat-icon>
+    <div>Feodora Reis</div>
+    <mat-icon class=userIcon>person</mat-icon>
+</mat-toolbar>
+<mat-drawer-container class="height100 width100 marginbottom16">
+    <mat-drawer mode="side" [(opened)]="sideNavOpen" class="height100 marginbottom16 lightblue">Drawer content</mat-drawer>
+    <mat-drawer-content class="lightcream marginright16">
+        <router-outlet></router-outlet>
+    </mat-drawer-content>
+</mat-drawer-container>
+  

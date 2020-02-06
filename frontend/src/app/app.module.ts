@@ -4,18 +4,27 @@ import { FormsModule } from '@angular/forms';
 import { MaterialModule } from './modules/material.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './modules/app-routing.module';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes: Routes = [
+  { path: 'dashboard', component: DashboardComponent },
+  { path: '**', component: DashboardComponent}
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     MaterialModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    RouterModule.forRoot(routes),
+    MatSidenavModule
   ],
   providers: [],
   bootstrap: [AppComponent]
