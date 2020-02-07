@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -12,12 +13,28 @@ export class AppComponent {
   searchActive = false;
   searchterm = '';
 
+  constructor(
+    private router: Router
+  ) {}
+
   toggleSideNav() {
     this.sideNavOpen = !this.sideNavOpen;
   }
 
   toggleSearch() {
     this.searchActive = !this.searchActive;
+  }
+
+  toMessaging() {
+    this.router.navigate(['conversations'])
+  }
+
+  toFavourites() {
+    this.router.navigate(['favourites']);
+  }
+
+  toHome() {
+    this.router.navigate(['dashboard']);
   }
 
 }

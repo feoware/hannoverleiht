@@ -1,40 +1,11 @@
-<div fxLayout="row" fxLayoutAlign="start" fxLayoutGap="20px" class="lightcream dashboard">
-    <mat-card class="itemCard">
-        <mat-card-header>
-            <img mat-card-avatar stc="../../assets/sherlock.jpg">
-            <mat-card-title>Bohrmaschine</mat-card-title>
-            <mat-card-subtitle>von Sherlock H. (Südstadt)</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/bohr.jpg">
-        <mat-card-content>
-            <p>
-            Eine tolle Bohrmaschine, mit der man bohren kann. 
-            Dazu verschiedene Bohraufsätze.
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-button><mat-icon>star</mat-icon>Merken</button>
-            <button mat-button><mat-icon>message</mat-icon>Anfragen</button>
-        </mat-card-actions>
-    </mat-card>
-    <mat-card class="itemCard">
-        <mat-card-header>
-            <img mat-card-avatar stc="../../assets/sherlock.jpg">
-            <mat-card-title>Nudelmaschine</mat-card-title>
-            <mat-card-subtitle>von Sherlock H. (Südstadt)</mat-card-subtitle>
-        </mat-card-header>
-        <img mat-card-image src="../../assets/nudel.jpg">
-        <mat-card-content>
-            <p>
-            Eine tolle Nudelmaschine, mit der man Nudeln maschinieren kann. 
-            Dazu verschiedene Rezepte.
-            </p>
-        </mat-card-content>
-        <mat-card-actions>
-            <button mat-button><mat-icon>star</mat-icon>Merken</button>
-            <button mat-button><mat-icon>message</mat-icon>Anfragen</button>
-        </mat-card-actions>
-    </mat-card>
+<div fxLayout="row wrap" fxLayoutAlign="start" fxLayoutGap="20px" class="lightcream dashboard">
+    <item-card [item]="mockItem1"></item-card>
+    <item-card [item]="mockItem2"></item-card>
+    <item-card [item]="mockItem3"></item-card>
+    <item-card [item]="mockItem1"></item-card>
+    <item-card [item]="mockItem2"></item-card>
+    <item-card [item]="mockItem3"></item-card>
+    <item-card [item]="mockItem1"></item-card>
+    <item-card [item]="mockItem2"></item-card>
+    <item-card [item]="mockItem3"></item-card>
 </div>
-
-  

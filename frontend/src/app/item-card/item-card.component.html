@@ -1,0 +1,17 @@
+<mat-card class="itemCard">
+    <mat-card-header>
+        <img *ngIf="item.owner.avatarSrc" mat-card-avatar src="{{item.owner.avatarSrc}}">
+        <img *ngIf="!item.owner.avatarSrc" mat-card-avatar src="../../favicon.ico">
+        <mat-card-title>{{item.title}}</mat-card-title>
+        <mat-card-subtitle>von {{item.owner.displayName}} ({{item.owner.location}})</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content fxLayout=column fxLayoutAlign="center center">
+        <img *ngIf="item.imageSrc" mat-card-image src="{{item.imageSrc}}">
+        <img *ngIf="!item.imageSrc" mat-card-image src="../../assets/noPicture.png">
+        <div class=itemDescription>{{getCroppedItemDescription()}}</div>
+    </mat-card-content>
+    <mat-card-actions fxLayout=row>
+        <div class=spacer></div>
+        <button mat-button (click)="toggleLike()"><mat-icon>{{ likedByCurrentUser ? 'star' : 'star_border' }}</mat-icon>  {{item.likes}}</button>
+    </mat-card-actions>
+</mat-card>

@@ -49,10 +49,15 @@
 }
 
 .pageInfo {
-    height: 250px;
+    height: 200px;
+    font-size: 14px;
     a {
         text-decoration: none;
         color: lightgoldenrodyellow;
     }
 }
 
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 24px;
+}

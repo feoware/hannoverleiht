@@ -8,16 +8,24 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ItemCardComponent } from './item-card/item-card.component';
+import { ConversationsComponent } from './conversations/conversations.component';
+import { FavouritesComponent } from './favourites/favourites.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
+  { path: 'conversations', component: ConversationsComponent },
+  { path: 'favourites', component: FavouritesComponent },
   { path: '**', component: DashboardComponent}
 ];
 
 @NgModule({
   declarations: [
     AppComponent,
-    DashboardComponent
+    DashboardComponent,
+    ItemCardComponent,
+    ConversationsComponent,
+    FavouritesComponent
   ],
   imports: [
     BrowserModule,
