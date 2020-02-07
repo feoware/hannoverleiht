@@ -24,6 +24,16 @@
 <div class="lightcream">
     <router-outlet></router-outlet>
 </div>
+<mat-toolbar color=accent class="pageInfo" fxLayout="row">
+    <div fxLayout="column">
+        <div>Impressum</div>
+        <a href="https://github.com/feoware/hannoverleiht">GitHub</a>
+        <div>Datenschutz</div>
+        <div>FAQ</div>
+    </div>
+    <div class=spacer></div>
+    <div fxFlexAlign="end">Version: 0.0.1</div>
+</mat-toolbar> 
 
 <mat-menu #userMenu="matMenu">
     <button mat-menu-item><mat-icon>person</mat-icon>Profil</button>
@@ -31,4 +41,4 @@
     <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Logout</button>
 </mat-menu>
   
-  
+
