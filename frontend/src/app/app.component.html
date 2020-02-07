@@ -1,15 +1,34 @@
-<mat-toolbar fxLayout=row fxLayoutGap="20px" color=accent>
-    <button mat-icon-button (click)=toggleSideNav()><mat-icon>menu</mat-icon></button>
+<mat-toolbar color=accent>
+    <img src="../favicon.ico" style="width: 40px; margin-right: 15px; margin-left: 15px;">
     <div>hannoverleiht (beta)</div>
     <div class=spacer></div>
-    <mat-icon>question_answer</mat-icon>
-    <div>Feodora Reis</div>
-    <mat-icon class=userIcon>person</mat-icon>
+    <div>
+        <mat-form-field *ngIf="searchActive == true">
+            <input matInput [value]="searchterm">
+        </mat-form-field>
+        <button mat-icon-button (click)="toggleSearch()" class="searchIcon">
+            <mat-icon>search</mat-icon>
+        </button>
+    </div>
+    <button mat-icon-button class="favListBtn">
+        <mat-icon>star</mat-icon>
+    </button>
+    <button mat-icon-button class="messageBtn">
+        <mat-icon matBadge="15" matBadgeColor="warn">question_answer</mat-icon>
+    </button>
+    <button mat-icon-button [matMenuTriggerFor]="userMenu" class=userMenuBtn>
+        <img class=userImg src="../assets/DouglasAdams.png">
+        <mat-icon>keyboard_arrow_down</mat-icon>
+    </button>
 </mat-toolbar>
-<mat-drawer-container class="height100 width100 marginbottom16">
-    <mat-drawer mode="side" [(opened)]="sideNavOpen" class="height100 marginbottom16 lightblue">Drawer content</mat-drawer>
-    <mat-drawer-content class="lightcream marginright16">
-        <router-outlet></router-outlet>
-    </mat-drawer-content>
-</mat-drawer-container>
+<div class="lightcream">
+    <router-outlet></router-outlet>
+</div>
+
+<mat-menu #userMenu="matMenu">
+    <button mat-menu-item><mat-icon>person</mat-icon>Profil</button>
+    <button mat-menu-item><mat-icon>settings</mat-icon>Einstellungen</button>
+    <button mat-menu-item><mat-icon>exit_to_app</mat-icon>Logout</button>
+</mat-menu>
+  
   

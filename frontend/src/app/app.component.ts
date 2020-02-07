@@ -9,8 +9,15 @@ export class AppComponent {
 
   title = 'hannoverleiht';
   sideNavOpen = false;
+  searchActive = false;
+  searchterm = '';
 
   toggleSideNav() {
     this.sideNavOpen = !this.sideNavOpen;
   }
+
+  toggleSearch() {
+    this.searchActive = !this.searchActive;
+  }
+
 }

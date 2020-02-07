@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
     BrowserModule,
     FormsModule,
     MaterialModule,
+    FlexLayoutModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(routes),
     MatSidenavModule
