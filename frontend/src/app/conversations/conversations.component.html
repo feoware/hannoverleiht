@@ -1,3 +1,73 @@
 <div class="lightcream">
-    Nachrichten
+  Meine Konversationen
+  <div fxLayout="row">
+    <div fxFlex="50%" class="conversationList">
+      Nachrichten-Liste
+    </div>
+    <div fxFlex="50%" class="conversationDetail">
+      <div fxLayout="column">
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <div>
+<b>Sherlock H.</b> (Südstadt)
+<br>
+zuletzt online: 13.02.2020
+          </div>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star</mat-icon>
+          <mat-icon>star_half</mat-icon>
+          <div class=spacer></div>
+          <img class="contactAvatar" src="../../assets/sherlock.jpg">
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutGap="10px">
+          <img class="itemImage" src="../../assets/bohr.jpg">
+          <div>
+            <b>Bohrmaschine</b>
+            <br>
+            Eine tolle Bohrmaschine, mit der man bohren kann. 
+          </div>
+          
+        </div>
+        <mat-divider></mat-divider>
+        <div>
+          <div class="conversationSnippet sent">Hallo, 
+ich habe Interesse an diesem Objekt.
+Ist es derzeit auszuleihen?
+Freundliche Grüße
+Willi Wichtig
+          </div>
+          <div class="conversationSnippet received">Hallo Willi, 
+ja, ich hab es im Moment zuhause.
+Wann passt es Dir denn, es abzuholen?
+Ich bin immer ab 17 Uhr zuhause.
+Beste Grüße
+Sherl
+          </div>
+          <div class="conversationSnippet sent">Hallo Sherl, 
+ich könnte am Freitag um 18 Uhr vorbeikommen,
+wenn es Dir passt.
+Wo muss ich denn genau hin?
+VG Willi
+          </div>
+        </div>
+        <mat-divider></mat-divider>
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <div>Nachricht:</div>
+          <div class=spacer></div>
+          <button mat-icon-button color="accent">
+            <mat-icon>camera_alt</mat-icon>
+          </button>
+        </div>
+        <mat-form-field appearance="outline" class=newMessage>
+          <textarea matInput></textarea>
+        </mat-form-field>
+        <div fxLayout="row" fxLayoutAlign="center center">
+          <div class=spacer></div>
+          <button mat-raised-button color="accent">Senden</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

@@ -1,0 +1,44 @@
+.conversationList {
+  border: 1px solid grey;
+}
+
+.conversationDetail {
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+.contactAvatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid darkblue;
+}
+
+.conversationSnippet {
+  overflow: visible;
+  white-space: pre;
+  margin: 10px;
+  border: 1px solid darkblue;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.sent {
+  margin-right: 50px;
+  background-color: white;
+}
+
+.received {
+  margin-left: 50px;
+}
+
+.newMessage .mat-form-field-outline {
+  background-color: white !important;
+}
+
+.itemImage {
+  border-radius: 5px;
+  border: 1px solid darkblue;
+  height: 60px;
+  width: 60px;
+}

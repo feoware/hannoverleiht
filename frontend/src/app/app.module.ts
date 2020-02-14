@@ -11,6 +11,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { ItemCardComponent } from './item-card/item-card.component';
 import { ConversationsComponent } from './conversations/conversations.component';
 import { FavouritesComponent } from './favourites/favourites.component';
+import { ConversationListItemComponent } from './conversations/list-item/conversation-list-item.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
@@ -25,7 +26,8 @@ const routes: Routes = [
     DashboardComponent,
     ItemCardComponent,
     ConversationsComponent,
-    FavouritesComponent
+    FavouritesComponent,
+    ConversationListItemComponent
   ],
   imports: [
     BrowserModule,
