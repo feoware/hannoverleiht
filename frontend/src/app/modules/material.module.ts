@@ -10,6 +10,7 @@ import { MatBadgeModule } from '@angular/material/badge';
 import { MatInputModule } from '@angular/material/input';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatCheckboxModule } from '@angular/material/checkbox';
 
 @NgModule({
   imports: [
@@ -22,7 +23,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatBadgeModule,
     MatInputModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCheckboxModule
   ],
   exports: [
     MatButtonModule,
@@ -34,7 +36,8 @@ import { MatDividerModule } from '@angular/material/divider';
     MatBadgeModule,
     MatInputModule,
     MatGridListModule,
-    MatDividerModule
+    MatDividerModule,
+    MatCheckboxModule
   ]
 })
 export class MaterialModule {}

@@ -19,7 +19,11 @@
 }
 
 .lightcream {
-    background-color: rgb(253, 253, 229);
+    background-color: rgb(252, 252, 232);
+}
+
+.lightlightcream {
+    background-color: rgb(253, 253, 241);
 }
 
 .spacer {
@@ -43,6 +47,26 @@
     font-family: 'Lobster', cursive;
 }
 
+.playfairFont {
+    font-family: 'Playfair Display', serif;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+.font18 {
+    font-size: 18px;
+}
+
+.padtop10 {
+    padding-top: 10px;
+}
+
+.padleft10 {
+    padding-left: 10px;
+}
+
+.pad5 {
+    padding: 5px;
 }

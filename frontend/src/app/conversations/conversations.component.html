@@ -1,27 +1,37 @@
-<div class="lightcream">
-  Meine Konversationen
+<div>
+  <div class="font18 padtop10 padleft10">Meine Konversationen</div>
   <div fxLayout="row">
-    <div fxFlex="50%" class="conversationList">
-      Nachrichten-Liste
+    <div fxFlex="50%" class="conversationList lightlightcream">
+      <conversation-list-item class=selected></conversation-list-item>
+      <mat-divider></mat-divider>
+      <conversation-list-item></conversation-list-item>
+      <mat-divider></mat-divider>
+      <conversation-list-item></conversation-list-item>
+      <mat-divider></mat-divider>
+      <conversation-list-item></conversation-list-item>
+      <mat-divider></mat-divider>
+      <conversation-list-item></conversation-list-item>
+      <mat-divider></mat-divider>
+      <conversation-list-item></conversation-list-item>
     </div>
-    <div fxFlex="50%" class="conversationDetail">
+    <div fxFlex="50%" class="conversationDetail lightlightcream">
       <div fxLayout="column">
-        <div fxLayout="row" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutAlign="center center" class="pad5">
           <div>
 <b>Sherlock H.</b> (Südstadt)
 <br>
 zuletzt online: 13.02.2020
           </div>
+          <div class=spacer></div>
           <mat-icon>star</mat-icon>
           <mat-icon>star</mat-icon>
           <mat-icon>star</mat-icon>
           <mat-icon>star</mat-icon>
           <mat-icon>star_half</mat-icon>
-          <div class=spacer></div>
           <img class="contactAvatar" src="../../assets/sherlock.jpg">
         </div>
         <mat-divider></mat-divider>
-        <div fxLayout="row" fxLayoutGap="10px">
+        <div fxLayout="row" fxLayoutGap="10px" class="pad5">
           <img class="itemImage" src="../../assets/bohr.jpg">
           <div>
             <b>Bohrmaschine</b>

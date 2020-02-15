@@ -1,9 +1,9 @@
 .conversationList {
-  border: 1px solid grey;
+  margin: 10px;
 }
 
 .conversationDetail {
-  border: 1px solid grey;
+  margin: 10px;
   padding: 10px;
 }
 
@@ -41,4 +41,12 @@
   border: 1px solid darkblue;
   height: 60px;
   width: 60px;
+}
+
+conversation-list-item {
+  padding: 10px;
+}
+
+.selected {
+  border-left: 5px solid darkgoldenrod;
 }
